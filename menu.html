@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8d4c47a3aa.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+        </style>
+</head>
+<body>
+    <section class="fent">
+        <header>
+            <figure>
+                <a href="#"><img src="pixelcut-export.png" alt=""></a>
+            </figure>
+    
+            <nav>
+                <ul class="menu">
+                    <li><a href="contact.html">Reservations</a></li>
+                    <li><a href="contact.html">Order online</a></li>
+                    <li><a href="contact.html">Menu</a></li>
+                    <li><a href="contact.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="cim"><h1>Our Menu</h1></div>
+    <div id="menu">
+        <div class="menu-item">
+            <h2>Burger</h2>
+            <p>Our signature burger with juicy beef patty, fresh lettuce, tomatoes, and cheese.</p>
+            <button onclick="addToCart('Burger', 10)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h2>Pasta</h2>
+            <p>Classic Italian pasta served with homemade sauce and garlic bread.</p>
+            <button onclick="addToCart('Pasta', 12)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h2>Salad</h2>
+            <p>Fresh salad made with locally sourced vegetables and house dressing.</p>
+            <button onclick="addToCart('Salad', 8)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+    <footer>
+        <div class="news">
+            <h4>Subscibe to our newsletter</h4>
+            <form action="">
+                <input type="text" placeholder="youremail@gmail.com" name="email">
+                <button class="gombi"><h1>Subscribe</h1></button>
+            </form>
+            
+        </div>
+
+        <div class="social">
+            <h5>Stay updated</h5>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/thebitetrattoria/?fbclid=IwZXh0bgNhZW0CMTAAAR0_sENO3B_04Uhyx_2fyP2yLY4Tr2kUS--3loR49dkC-gNovSqsJOcXa00_aem_ATZwnrabYRyNY04PO0myIThr9ZL8UdQF2aLkdZIVWBOfkhS1e7iXB1hOD7YDaPmlf9K6dFMY2WUqua2AEeSak1Fb" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/porsche/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/TrattoriaBite" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.cim{
+    margin: 0px;
+    font-size: 1000;
+    text-decoration: bold;
+}
+h1 {
+    margin: 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.menu-item h2 {
+    margin-top: 0;
+}
+
+#cart {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section .fent {
+    width: 100%;
+}
+
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 10rem;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(129, 102, 11);
+}
+header figure img {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header figure{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+header figure h1{
+    color: rgb(187, 146, 12);
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.social h5{
+    color: rgb(187, 146, 12);
+    font-size: 150%;
+    letter-spacing: 0.22rem;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+footer .news form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer .news input{
+    width: 100%;
+    border: none;
+    padding: 9%;
+    margin: 5%;
+    color:rgb(187, 146, 12);
+}
+
+footer .news button{
+    width: 118%;
+    border: none;
+    color:rgb(187, 146, 12);
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news button:hover{
+    width: 120%;
+    border: none;
+    background-color: rgb(187, 146, 12);
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news .gombi h1{
+    color: rgb(187, 146, 12);
+    font-size: 1rem;
+}
+
+footer .news .gombi:hover h1{
+    color: white;
+}
+
+footer .social{
+    text-align: center;
+
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+footer .social ul li{
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+i{
+    font-size: 250%;
+    text-align: center;
+}
+footer .social ul li a{
+    color: rgb(187, 146, 12);
+}
+
+footer .social ul li a:hover{
+    color: rgb(187, 146, 12);
+}
+footer .news h4{
+    color: rgb(187, 146, 12);
+    font-size: 1.4rem;
+}
+
+footer .news input, footer .news button{
+    border-radius: 3px;
+}
+
+@media (max-width: 1024px){
+    .fent{
+        position: static;
+    }
+    header figure a img{
+        display: block;
+        margin: auto;
+    }
+    header{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    nav .menu{
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    header nav{
+        font-size: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 0.13rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+    header nav ul li {
+        padding: .5rem;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .news{
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+    footer .social{
+        padding-bottom: 2rem;
+    }
+}
