@@ -38,7 +38,44 @@ body {
 
 /* Existing CSS styles */
 
+.submit {
+    background:goldenrod;
+    color:white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 5%;
+    margin-bottom: 0;
+}
 
+.info{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+
+.cards{
+    
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+
+.foodItem{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}   
 .magassag{
     height: 10rem;
 }

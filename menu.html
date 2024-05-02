@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="orders.js" defer></script>
     <script src="https://kit.fontawesome.com/8d4c47a3aa.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<div id="menuPage">
     <section class="fent">
         <header>
             <figure>
@@ -287,7 +288,7 @@
     <div id="cart">
         <h2>Cart</h2>
         <ul id="cart-items"></ul>
-        <button onclick="checkout()">Checkout</button>
+        <button onclick="checkout()" >Checkout</button>
     </div>
 
     <footer>
@@ -301,8 +302,7 @@
             </form>
 
         </div>
-
-
+       
         <div class="social">
             <h5>Stay updated</h5>
             <ul>
@@ -321,6 +321,132 @@
             </ul>
         </div>
     </footer>
+</div>
+    <div id="orderFormContainer" style="display:none;">
+        <h1>Order online</h1> <br><br>
+        <!-- <h2>Add more options to cart:</h2> <br> <br>
+        
+        <form id="orderForm">
+            
+<!--             
+          <label for="foodItem">Main dishes:</label>
+            <select class="foodItem" id="maindish" name="Maindish">
+                <div class="container">
+                <option value="Beef Cheese Burger" class="text1" id="text1">Beef Cheese Burger</option>
+                <img src="img/burger.jpg" alt="Photo 1" class="photo" id="photo1"></div>
+                <option value="Vegan Burger">Vegan Burger</option>
+                <option value="Filleted Fish with Tomato Sauce" selected>Filleted Fish with Tomato Sauce</option>
+                <option value="Gypsy roast">Gypsy roast</option>
+                <option value="Carbonara pasta">Carbonara pasta</option>
+                <option value="Bolognese pasta">Bolognese pasta</option>
+                <option value="Chicken wrap">Chicken wrap</option>
+            </select><br><br>
+    
+            <label for="foodItem">Garnishes:</label>
+            <select class="foodItem" id="garnishes" name="Garnishes">
+                <option value="Mashed potatoes">Mashed potatoes</option>
+                <option value="Cheesy fries">Cheesy fries</option>
+                <option value="Mixed vegetables">Mixed vegetables</option>
+                <option value="Sweet potatoese" selected>Sweet potatoes</option>
+            </select><br><br>
+    
+            <label for="foodItem">Salads:</label>
+            <select class="foodItem" id="salads" name="Salads">
+                <option value="Caesar salad">Caesar salad</option>
+                <option value="Greek salad">Greek salad</option>
+                <option value="Panzanella" selected>Panzanella</option>
+                <option value="Caprese" selected>Caprese</option>
+                <option value="Garden salmon salad" selected>Garden salmon salad</option>
+            </select><br><br>
+    
+            <label for="foodItem">Sauces:</label>
+            <select class="foodItem" id="sauces" name="Sauces">
+                <option value="Tomato sauce">Tomato sauce</option>
+                <option value="Mayonnaise">Mayonnaise</option>
+                <option value="Honey-mustard" selected>Honey-mustard</option>
+                <option value="Garlic sauce" selected>Garlic sauce</option>
+            </select><br><br>
+    
+            <label for="foodItem">Deserts:</label>
+            <select class="foodItem" id="deserts" name="Deserts">
+                <option value="Crepes">Crepes</option>
+                <option value="Fruit bowl">Fruit bowl</option>
+                <option value="Ice cream " selected>Ice cream </option>
+                <option value="Chestnut puree with whipped cream " selected>Chestnut puree with whipped cream </option>
+                <option value="Cheesecake" selected>Cheesecake</option>
+                <option value="Panna Cotta" selected>Panna Cotta </option>
+            </select><br><br>
+    
+            <label for="foodItem">Drinks:</label>
+            <select class="foodItem" id="drinks" name="Drinks">
+                <option value="Coca Cola">Coca Cola</option>
+                <option value="Water">Water</option>
+                <option value="Fanta">Fanta</option>
+                <option value="Sprite">Sprite</option>
+                <option value="Cappy">Cappy</option>
+                <option value="Red bull">Red bull</option>
+                <option value="Mountain dew">Mountain dew</option>
+                <option value="Cappucino">Cappucino</option>
+                <option value="Tinto de Verano">Tinto de Verano</option>
+                <option value="Mojitomango">Mojito Mango</option>
+                <option value="Mojitostrawberry">Mojito Strawberry</option>
+                <option value="Mojitolemon">Mojito Lemon</option>
+                <option value="Lemonade">Lemonade</option>
+                <option value="Beer">Beer</option>
+                <option value="Red wine" selected>Red wine</option>
+                <option value="White wine" selected>White wine</option>
+            </select><br><br>-->
+    
+            <!-- <input type="button" value="Add to Cart" id="addToCartBtn" > -->
+            
+            <!-- <button id="addToCartBtn"><i class="fa-solid fa-cart-shopping"></i></button><br><br>
+            <br><br>  -->
+            <input type="submit" class="submit" value="Submit Order">
+            
+            
+        <h2>Your Cart</h2>
+  
+        <ul id="orderFormCartItems"></ul>
+        </form>
+         <br> <br>
+       
+        <div id="cartItems"></div>
+        
+            <div class="info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="number">Phone number:</label>
+            <input type="phone number" id="number" name="number" required><br><br>
+    
+            <label for="name">Adress:</label>
+            <input type="adress" id="adress" name="adress" required><br><br>
+    
+           
+            <label for="creditCardNumber">Credit Card Number:</label>
+            <input type="text" id="creditCardNumber" placeholder="Enter your credit card number" maxlength="16"> <br> <br>
+        </div>
+            <div class="cards">
+                <label>
+                  <input type="checkbox" class="card-checkbox" value="visa"> <i class="fa-brands fa-cc-visa"></i> Visa 
+                </label> <br>
+                <label>
+                  <input type="checkbox" class="card-checkbox" value="mastercard"><i class="fa-brands fa-cc-mastercard"></i> Mastercard
+                </label> <br>
+                <label>
+                  <input type="checkbox" class="card-checkbox" value="amex"><i class="fa-regular fa-credit-card"></i> American Express
+                </label> <br>
+              </div>
+              <div id="selectedCards"></div>
+    
+    
+            <br><br>
+            
+    </div>
+        
 
 </body>
 
