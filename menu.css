@@ -1,0 +1,563 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+
+    #view-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(187, 146, 12);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+ 
+  
+  
+
+
+
+/* Existing CSS styles */
+
+
+/* Existing CSS styles */
+
+.submit {
+    background:goldenrod;
+    color:white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+.info{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+
+.cards{
+    
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}
+.cash, .card{
+    background:goldenrod;
+    color:black;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 2%;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 10%;
+    font-weight: 500;
+}
+
+.foodItem{
+    display: inline-block;
+    
+    clear: center;
+    width: 250px;
+    text-align: left;
+}   
+.magassag{
+    height: 10rem;
+}
+.mainmenu {
+    width: 100%;
+}
+
+.foods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foods ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foods ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mainmenu .foods ul li img{
+    width: 300px;
+    height: 300px;
+}
+.top {
+    --offset: 50px; 
+    
+    position: fixed;
+    bottom: 90px;
+    right: 27px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  /* ---------- Useful Button styling ---------- */
+
+
+  
+  .top:hover {
+    transition-duration: 0.1s;
+    background-color: black;
+  }
+  
+  .top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .top:active:after {
+    box-shadow: 0 0 0 0 black;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .button:active {
+    top: 1px;
+  }
+  
+  
+  
+
+  
+
+  
+  
+
+  
+  
+.foods a{
+    text-decoration: none;
+    color: rgb(187, 146, 12) ;
+
+}
+.foods h2{
+    color:rgb(187, 146, 12) ; 
+    font-size: 30px;
+}
+.cim {
+    font-size: 25px;
+    font-weight: bold; /* Use font-weight instead of text-decoration for boldness */
+    text-align: center;
+   color:rgb(187, 146, 12) ; 
+
+}
+.namedish{
+    color: rgb(187, 146, 12);
+    margin: 10px;
+}
+
+.meniu-item button {
+    position: relative;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    color: black;
+    
+    width: 150px;
+    height: 30px;
+    text-align: center; /* Align text to the center */
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+}
+
+  .meniu-item button:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .meniu-item button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+h1 {
+    margin: 0;
+}
+.namedish{
+    border-bottom: 1px solid #ddd;
+    background-color: black;
+    width: 100%;
+    margin :0;
+}
+.namedish h2{
+    margin-left: 30px;
+}
+
+.meniu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    
+}
+.meniu-item h2{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.meniu-item p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.meniu-item h2 {
+    margin-top: 0;
+}
+
+#cart {
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+#cart button{
+    color: black;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+section .fent {
+    width: 100%;
+}
+
+.fent{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 10rem;
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    font-size: 150%;
+    letter-spacing: 0.13rem;
+  
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    padding: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(187, 146, 12);
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(129, 102, 11);
+}
+header figure img {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header figure{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+}
+
+header figure h1{
+    color: rgb(187, 146, 12);
+    font-size: 3rem;
+    font-family: "Italiana", sans-serif;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.social h5{
+    color: rgb(187, 146, 12);
+    font-size: 150%;
+    letter-spacing: 0.22rem;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+footer .news form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer .news input{
+    width: 100%;
+    border: none;
+    padding: 9%;
+    margin: 5%;
+    color:rgb(187, 146, 12);
+}
+
+footer .news button{
+    width: 118%;
+    border: none;
+    color:rgb(187, 146, 12);
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news button:hover{
+    width: 120%;
+    border: none;
+    background-color: rgb(187, 146, 12);
+    color: white;
+    padding: 9%;
+    margin: 5%;
+}
+
+footer .news .gombi h1{
+    color: rgb(187, 146, 12);
+    font-size: 1rem;
+}
+
+footer .news .gombi:hover h1{
+    color: white;
+}
+
+footer .social{
+    text-align: center;
+
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+footer .social ul li{
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+i{
+    font-size: 250%;
+    text-align: center;
+}
+footer .social ul li a{
+    color: rgb(187, 146, 12);
+}
+
+footer .social ul li a:hover{
+    color: rgb(187, 146, 12);
+}
+footer .news h4{
+    color: rgb(187, 146, 12);
+    font-size: 1.4rem;
+}
+
+footer .news input, footer .news button{
+    border-radius: 3px;
+}
+
+
+
+    
+    @media (max-width: 1024px){
+        .top,
+        #view-cart-btn {
+            position: fixed;
+            right: 20px;
+            border-radius: 50%; /* Adjusted border radius for the top button */
+            z-index: 1; 
+        
+        }
+    
+        .top {
+            bottom: 90px;
+            right: 25px;
+            z-index: 1;
+        }
+    
+    .foods ul {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+        .fent{
+            position: static;
+        }
+        header figure a img{
+            display: block;
+            margin: auto;
+        }
+        header{
+            display: block;
+            width: auto;
+            height: auto;
+            background: black;
+        }
+        header figure {
+            justify-content: center;
+        }
+    
+        .header-scrolled{
+            background: rgba(0,0,0, 100%) 
+            
+        }
+        nav .menu{
+            margin-bottom: 2rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        header nav{
+            font-size: 100%;
+            letter-spacing: 0.13rem;
+            margin-right: 0rem;
+            margin-top: 1rem;
+        }
+        header nav ul li {
+            padding: .5rem;
+            text-align: center;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            z-index: 5;
+        }
+    
+        footer .news{
+            padding-bottom: 5rem;
+            padding-top: 2rem;
+            
+        }
+        footer .social{
+            padding-bottom: 2rem;
+            
+        }
+        
+    }
