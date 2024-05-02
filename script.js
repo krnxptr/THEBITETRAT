@@ -1,3 +1,6 @@
+
+
+
 let cartItems = [];
 
 function addToCart(itemName, price) {

@@ -6,43 +6,252 @@ body {
 
 
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
+/* Existing CSS styles */
 
-header {
-    background-color: #333;
-    color: #fff;
+/* Existing CSS styles */
+
+    #view-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(187, 146, 12);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+ 
+  
+  
+
+
+
+/* Existing CSS styles */
+
+
+/* Existing CSS styles */
+
+
+.magassag{
+    height: 10rem;
+}
+.mainmenu {
+    width: 100%;
+}
+
+.foods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foods ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foods ul li {
+    margin-bottom: 10px;
     text-align: center;
-    padding: 20px 0;
 }
-.cim{
-    margin: 0px;
-    font-size: 1000;
-    text-decoration: bold;
+
+.mainmenu .foods ul li img{
+    width: 300px;
+    height: 300px;
 }
+.top {
+    --offset: 50px; 
+    
+    position: fixed;
+    bottom: 90px;
+    right: 27px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  /* ---------- Useful Button styling ---------- */
+
+
+  
+  .top:hover {
+    transition-duration: 0.1s;
+    background-color: black;
+  }
+  
+  .top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .top:active:after {
+    box-shadow: 0 0 0 0 black;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .button:active {
+    top: 1px;
+  }
+  
+  
+  
+
+  
+
+  
+  
+
+  
+  
+.foods a{
+    text-decoration: none;
+    color: rgb(187, 146, 12) ;
+
+}
+.foods h2{
+    color:rgb(187, 146, 12) ; 
+    font-size: 30px;
+}
+.cim {
+    font-size: 25px;
+    font-weight: bold; /* Use font-weight instead of text-decoration for boldness */
+    text-align: center;
+   color:rgb(187, 146, 12) ; 
+
+}
+.namedish{
+    color: rgb(187, 146, 12);
+    margin: 10px;
+}
+
+.meniu-item button {
+    position: relative;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    color: black;
+    
+    width: 150px;
+    height: 30px;
+    text-align: center; /* Align text to the center */
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+}
+
+  .meniu-item button:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .meniu-item button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
 h1 {
     margin: 0;
 }
-
-.menu-item {
+.namedish{
     border-bottom: 1px solid #ddd;
-    padding: 20px;
+    background-color: black;
+    width: 100%;
+    margin :0;
+}
+.namedish h2{
+    margin-left: 30px;
 }
 
-.menu-item h2 {
+.meniu-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    
+}
+.meniu-item h2{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.meniu-item p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.meniu-item h2 {
     margin-top: 0;
 }
 
 #cart {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 15px;
 }
 
 #cart-items {
     list-style-type: none;
     padding: 0;
 }
+#cart button{
+    color: black;
+    background-color: rgb(187, 146, 12);
+    border: none;
+    border-radius: 5%;
+    width: 150px;
+    height: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 
 #cart-items li {
     margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 * {
     margin: 0;
@@ -218,48 +427,82 @@ footer .news input, footer .news button{
     border-radius: 3px;
 }
 
-@media (max-width: 1024px){
-    .fent{
-        position: static;
-    }
-    header figure a img{
-        display: block;
-        margin: auto;
-    }
-    header{
-        display: block;
-        width: auto;
-        height: auto;
-    }
-    nav .menu{
-        margin-bottom: 2rem;
-        display: block;
+
+
+    
+    @media (max-width: 1024px){
+        .top,
+        #view-cart-btn {
+            position: fixed;
+            right: 20px;
+            border-radius: 50%; /* Adjusted border radius for the top button */
+        }
+    
+        .top {
+            bottom: 90px;
+            right: 25px;
+        }
+    
+    .foods ul {
         width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
-    header nav{
-        font-size: 100%;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        letter-spacing: 0.13rem;
-        margin-right: 0rem;
-        margin-top: 1rem;
-    }
-    header nav ul li {
-        padding: .5rem;
-        text-align: center;
-    }
-    footer{
+        list-style: none;
+        padding: 0;
+        margin: 10px;
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        justify-content: space-around;
     }
-
-    footer .news{
-        padding-bottom: 5rem;
-        padding-top: 2rem;
+        .fent{
+            position: static;
+        }
+        header figure a img{
+            display: block;
+            margin: auto;
+        }
+        header{
+            display: block;
+            width: auto;
+            height: auto;
+            background: black;
+        }
+        header figure {
+            justify-content: center;
+        }
+    
+        .header-scrolled{
+            background: rgba(0,0,0, 100%) 
+            
+        }
+        nav .menu{
+            margin-bottom: 2rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+        header nav{
+            font-size: 100%;
+            letter-spacing: 0.13rem;
+            margin-right: 0rem;
+            margin-top: 1rem;
+        }
+        header nav ul li {
+            padding: .5rem;
+            text-align: center;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        footer .news{
+            padding-bottom: 5rem;
+            padding-top: 2rem;
+        }
+        footer .social{
+            padding-bottom: 2rem;
+        }
+        
     }
-    footer .social{
-        padding-bottom: 2rem;
-    }
-}
